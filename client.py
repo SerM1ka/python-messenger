@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow
 
 from admin import AdminWindow
-from gui_client import Ui_ClientWindow
+from gui.gui_client import Ui_ClientWindow
 from login import Login
 from server import DISCONNECT_MESSAGE, GET_USERS_LIST_MESSAGE, NEW_USER_MESSAGE, \
     receive_msg, send_msg, CHAT_CHANGED_MESSAGE, CHAT_HISTORY_MESSAGE, CHAT_MSG_MESSAGE, get_own_html_message, \

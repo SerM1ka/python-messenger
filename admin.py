@@ -1,15 +1,12 @@
 from PyQt5.QtWidgets import QMainWindow
 
-from gui_admin import Ui_AdminWindow
-from gui_client import Ui_ClientWindow
-from login import Login
+from gui.gui_admin import Ui_AdminWindow
 from server import DISCONNECT_MESSAGE, GET_USERS_LIST_MESSAGE, NEW_USER_MESSAGE, \
     receive_msg, send_msg, CHAT_CHANGED_MESSAGE, CHAT_HISTORY_MESSAGE, CHAT_MSG_MESSAGE, get_own_html_message, \
     CHAT_MSG_RECEIVED_MESSAGE
 
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import QThread, QObject, pyqtSignal as Signal, pyqtSlot as Slot, Qt
-import sys
 
 
 class AdminSocketWorker(QObject):

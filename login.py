@@ -1,7 +1,7 @@
 import socket
 
 from server import HOST, PORT, NAME_MESSAGE, send_msg
-from gui_login import Ui_LoginWindow
+from gui.gui_login import Ui_LoginWindow
 from PyQt5 import QtWidgets
 import sys
 
